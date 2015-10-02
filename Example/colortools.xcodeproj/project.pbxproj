@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2978FD471BBEC8E600C09E20 /* colortools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2978FD461BBEC8E600C09E20 /* colortools.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		0C7945A753400E9040F8464B /* colortools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = colortools.podspec; path = ../colortools.podspec; sourceTree = "<group>"; };
 		0E907C250AB5F39D08BD4A86 /* Pods_colortools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_colortools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2978FD441BBEC8A100C09E20 /* colortools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = colortools.framework; path = "Pods/../build/Debug-iphoneos/colortools.framework"; sourceTree = "<group>"; };
+		2978FD461BBEC8E600C09E20 /* colortools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = colortools.framework; path = "Pods/../build/Debug-iphoneos/colortools.framework"; sourceTree = "<group>"; };
 		498D56D43896F618CCE94660 /* Pods-colortools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-colortools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-colortools_Tests/Pods-colortools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* colortools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colortools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAEB3F7C31D1BE419C988C6 /* Pods_colortools_Example.framework in Frameworks */,
+				2978FD471BBEC8E600C09E20 /* colortools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,8 @@
 		5A3772A0DEF542903E403C22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2978FD461BBEC8E600C09E20 /* colortools.framework */,
+				2978FD441BBEC8A100C09E20 /* colortools.framework */,
 				710A51BE0372D93E7199F0F9 /* Pods_colortools_Example.framework */,
 				0E907C250AB5F39D08BD4A86 /* Pods_colortools_Tests.framework */,
 			);
@@ -209,6 +215,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -487,6 +494,10 @@
 			baseConfigurationReference = 744B0CA2EDCDA1D0703F4E63 /* Pods-colortools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = colortools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -499,6 +510,10 @@
 			baseConfigurationReference = BA5B85F46463173B333362E2 /* Pods-colortools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = colortools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

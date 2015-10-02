@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="colortools_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,53 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7n-wa-yhX">
+                                <rect key="frame" x="170" y="28" width="260" height="260"/>
+                                <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="EF0-SL-PNZ"/>
+                                    <constraint firstAttribute="height" constant="260" id="Uns-aN-9eG"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neK-2J-K2E">
+                                <rect key="frame" x="170" y="301" width="260" height="58"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="dRO-TJ-ef8"/>
+                                    <constraint firstAttribute="height" constant="58" id="h3H-nT-BsM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Br-Sg-VLE">
+                                <rect key="frame" x="170" y="367" width="260" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vte-5n-Bze"/>
+                                    <constraint firstAttribute="width" constant="260" id="yzS-2E-REQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o7n-wa-yhX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="1ar-9M-vJY"/>
+                            <constraint firstItem="1Br-Sg-VLE" firstAttribute="top" secondItem="neK-2J-K2E" secondAttribute="bottom" constant="8" id="3qk-Sk-7RW"/>
+                            <constraint firstItem="o7n-wa-yhX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="aJB-fN-fJD"/>
+                            <constraint firstItem="neK-2J-K2E" firstAttribute="top" secondItem="o7n-wa-yhX" secondAttribute="bottom" constant="13" id="agt-bI-s81"/>
+                            <constraint firstItem="neK-2J-K2E" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gqb-8z-lCI"/>
+                            <constraint firstItem="1Br-Sg-VLE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="uUx-st-yDV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contrastingView" destination="neK-2J-K2E" id="yeI-fT-0nz"/>
+                        <outlet property="imageView" destination="o7n-wa-yhX" id="xns-Xa-5ov"/>
+                        <outlet property="vibLabel" destination="1Br-Sg-VLE" id="mu9-bW-TfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="433" y="180"/>
         </scene>
     </scenes>
 </document>

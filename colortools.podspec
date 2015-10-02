@@ -9,32 +9,31 @@
 Pod::Spec.new do |s|
   s.name             = "colortools"
   s.version          = "0.1.0"
-  s.summary          = "A short description of colortools."
+  s.summary          = "A simple toolkit to find the dominant colour in an image"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
+  s.description      = <<-DESCA simple tool that takes an image and responds with an array of colours in descending order of the most contrasting dominant colour, simply choose the amount of colours you wish.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/colortools"
+  s.homepage         = "https://github.com/imclean/colortools"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Iain McLean" => "iain@brightskyapps.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/colortools.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/imclean/colortools.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/brightskyapps'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes'
   s.resource_bundles = {
     'colortools' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 'UIKit'
 end
