@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'colortools_Example', :exclusive => true do
+  pod "colortools", :path => "../"
+end
+
+target 'colortools_Tests', :exclusive => true do
+  pod "colortools", :path => "../"
+
+  
+end
