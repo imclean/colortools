@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/imclean/colortools"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  # s.screenshots     = "https://github.com/imclean/colortools/blob/master/image.png"
   s.license          = 'MIT'
   s.author           = { "Iain McLean" => "iain@brightskyapps.com" }
   s.source           = { :git => "https://github.com/imclean/colortools.git", :tag => s.version.to_s }
