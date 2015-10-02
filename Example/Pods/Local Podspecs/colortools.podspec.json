@@ -1,0 +1,25 @@
+{
+  "name": "colortools",
+  "version": "0.1.0",
+  "summary": "A short description of colortools.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/colortools",
+  "license": "MIT",
+  "authors": {
+    "Iain McLean": "iain@brightskyapps.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/colortools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "colortools": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
