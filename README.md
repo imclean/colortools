@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 Detects and returns image colours, with hex strings
-https://github.com/imclean/colortools/blob/master/image.png?raw=true
+![Example project Screenshot](/blob/master/image.png?raw=true "Screenshot")
 
 ## Requirements
 
